@@ -1,0 +1,40 @@
+Source: vdr-plugin-softhddevice
+Section: video
+Priority: extra
+Maintainer: Debian VDR Team <pkg-vdr-dvb-devel@lists.alioth.debian.org>
+Uploaders: Tobias Grimm <etobi@debian.org>
+Build-Depends: debhelper (>= 9), vdr-dev (>= 2.2.0), gettext, pkg-config,
+ libasound2-dev,
+ libx11-dev,
+ libxcb1-dev,
+ libx11-xcb-dev,
+ libxcb-ewmh-dev,
+ libxcb-dpms0-dev,
+ libxcb-glx0-dev,
+ libxcb-icccm4-dev,
+ libxcb-image0-dev,
+ libxcb-randr0-dev,
+ libxcb-screensaver0-dev,
+ libxcb-shm0-dev,
+ libxcb-util0-dev,
+ libxcb-xv0-dev,
+ x11proto-core-dev,
+ mesa-common-dev,
+ libglu1-mesa-dev,
+ libva-dev,
+ libvdpau-dev,
+ libavcodec-dev,
+ libavutil-dev,
+ libavresample-dev,
+Standards-Version: 3.9.7
+Homepage: http://projects.vdr-developer.org/projects/plg-softhddevice
+Vcs-Git: git://git.debian.org/git/pkg-vdr-dvb/vdr-plugin-softhddevice.git
+Vcs-Browser: http://git.debian.org/?p=pkg-vdr-dvb/vdr-plugin-softhddevice.git
+
+Package: vdr-plugin-softhddevice
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${vdr:Depends}
+Description: HD output device plugin for VDR
+ This plugin for the Linux Video Disc Recorder (VDR) acts as
+ a output frontend with CPU / VA-API / VDPAU supported video
+ decoding.

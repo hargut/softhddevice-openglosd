@@ -1,0 +1,3 @@
+version=3
+opts="uversionmangle=s/rc/~rc/" \
+http://projects.vdr-developer.org/projects/plg-softhddevice/files .*/vdr-softhddevice-(.*)\.tgz
