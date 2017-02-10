@@ -2627,12 +2627,22 @@ void AudioSetVolume(int volume)
     // reduce loudness for stereo output
     if (AudioStereoDescent && AudioRing[AudioRingRead].InChannels == 2
 	&& !AudioRing[AudioRingRead].Passthrough) {
-	volume -= AudioStereoDescent;
+
+	#ifdef DEBUG
+		printf("[softhddev]%s: initial volume: %i \n", __FUNCTION__, volume);
+	#endif
+
+	volume = (AudioVolume * (1000 - AudioStereoDescent)) / 1000;
 	if (volume < 0) {
 	    volume = 0;
 	} else if (volume > 1000) {
 	    volume = 1000;
 	}
+
+	#ifdef DEBUG
+		printf("[softhddev]%s: calculated volume: %i \n", __FUNCTION__, volume);
+	#endif
+
     }
     AudioAmplifier = volume;
     if (!AudioSoftVolume) {
