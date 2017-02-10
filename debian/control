@@ -26,6 +26,10 @@ Build-Depends: debhelper (>= 9), vdr-dev (>= 2.2.0), gettext, pkg-config,
  libavcodec-dev,
  libavutil-dev,
  libavresample-dev,
+ libavformat-dev,
+ libglew-dev,
+ libglm-dev,
+ freeglut3-dev
 Standards-Version: 3.9.7
 Homepage: http://projects.vdr-developer.org/projects/plg-softhddevice
 Vcs-Git: git://git.debian.org/git/pkg-vdr-dvb/vdr-plugin-softhddevice.git
