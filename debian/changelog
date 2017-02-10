@@ -1,3 +1,10 @@
+vdr-plugin-softhddevice (0.6.0+git20170210-1) unstable; urgency=medium
+
+  * rebase source to openglosd version from Louis Braun
+  * modify volume regulation for smooth volume adjustment
+
+ -- Harald Gutmann <harald.gutmann@gmx.net>  Fri, 10 Feb 2017 11:29:37 +0100
+
 vdr-plugin-softhddevice (0.6.0+git20160108-1) unstable; urgency=medium
 
   * New Upstream Snapshot (commit 6dfa88a)
